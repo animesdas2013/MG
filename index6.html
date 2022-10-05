@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<!-- Exercise - 4 Calculate time needed for reading 
+1. Calculate minutes required to read an array article
+2. Display the minutes needed below the article title
+note: Assume the average reading speed of an adult is 200wpm 
+-->
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p></p>
+    <script>
+        const readingSpeed = document.querySelector('p')
+        const body = document.querySelector('body')
+        let arr = [1,2,3,4,5]
+        let averageSpeed = 200
+        let count = 0;
+        for (let index = 0; index < arr.length; index++) {
+            count = count+1;
+        }
+        
+        let readingTime = count*averageSpeed;
+        readingSpeed.textContent = readingTime;
+        readingSpeed.style.color = 'white'
+        readingSpeed.style.textAlign = 'center'
+        body.style.backgroundColor = 'black'
+        
+    
+    </script>
+</body>
+</html>
